@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Formulário Cadastro</title>
+</head>
+<body>
+    <section>
+        <h2>Cadastro pessoa física</h2>
+        <form name="frmcadastro" method="get" action="#" onsubmit="return validaForm()">
+            <fieldset class="dados-pessoais">
+                <legend>Informações Pessoais</legend>
+
+                <label for="nome">Nome completo:</label>
+                <input type="text" name="txtnome" id="nome" placeholder="Ex: Ana Silva">
+
+                <label for="nascimento">Data de Nascimento:</label>
+                <input type="text" name="txtnascimento" id="nascimento" placeholder="Ex: 00/00/0000">
+
+                <label for="cpf">CPF:</label>
+                <input type="text" name="txtcpf" id="cpf" placeholder="Ex: 123.456.789-00">
+
+                <label class="genero-label">Gênero</label>
+                <select name="genero">
+                    <option value="#">Selecione</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <label for="nomemae">Nome completo da mãe:</label>
+                <input type="text" name="txtnomemae" id="nomemae" placeholder="Ex: Maria Silva">
+            </fieldset>
+            <fieldset class="info-contato">
+                <legend>Informações de contato</legend>
+
+                <label for="telefone">Número de contato:</label>
+                <input type="text" name="txtfone" id="telefone" placeholder="Ex: (12)12345-6789">
+
+                <label for="whatsapp">Número de Whatsapp:</label>
+                <input type="text" name="txtwpp" id="whatsapp" placeholder="Ex: (12)12345-6789">
+
+                <label for="email">E-mail:</label>
+                <input type="email" name="txtmail" id="email" placeholder="seuemail@exemplo.com">
+            </fieldset>
+            <fieldset class="endereco">
+                <legend>Endereço Residencial</legend>
+
+                <label for="rua">Rua:</label>
+                <input type="text" name="txtrua" id="rua" placeholder="Ex: Rua Luciano Pavaroto">
+
+                <label for="num-casa">Número:</label>
+                <input type="text" name="txtnum" id="num-casa" placeholder="Ex: 345">
+
+                <label for="bairro">Bairro:</label>
+                <input type="text" name="txtbairro" id="bairro" placeholder="Ex: Costa">
+
+                <label for="cep">CEP:</label>
+                <input type="text" name="txtcep" id="cep" placeholder="Ex: 00000-000">
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" name="txtcidade" id="cidade" placeholder="Ex: São Paulo">
+            </fieldset>
+            <fieldset class="botoes">
+                <button type="reset">Limpar</button>
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
