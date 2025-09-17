@@ -21,7 +21,6 @@ function mostrarErro(input, msg) {
     }
 }
 
-// Função principal de validação do formulário
 function validaForm() {
     let valido = true;
 
