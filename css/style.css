@@ -111,6 +111,7 @@ fieldset{
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
+    background-color: #ffffff;
 }
 
 legend{
@@ -126,6 +127,7 @@ fieldset.botoes{
     gap: 10px;
     border: none;
     padding: 10px;
+    background-color: #f0f0f0;
 }
 
 button{
@@ -141,4 +143,14 @@ button{
 button:hover {
    background-color: #3498db;
    transform: translateY(-2px);
+}
+
+.erro {
+    border: 2px solid red;
+}
+
+.erro-msg {
+    color: red;
+    font-size: 12px;
+    margin-top: 2px;
 }
